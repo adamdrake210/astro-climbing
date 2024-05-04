@@ -1,0 +1,41 @@
+---
+import "@/styles/globals.css";
+import Layout from "../layouts/BaseLayout.astro";
+import ClimbingInfo from "@/components/ClimbingInfo.astro";
+---
+
+<Layout title="Climbing Love">
+  <div class="container mx-auto px-4 py-8">
+    <div class="text-center my-16">
+      <h1 class="text-4xl font-extralight text-gray-100">
+        Welcome to Climbing Love
+      </h1>
+      <p class="text-md text-gray-200">Your source for all things climbing</p>
+    </div>
+    <div>
+      <h2 class="text-3xl font-extralight text-gray-100">Types of Climbing</h2>
+      <div class="grid grid-cols-2 gap-4 mt-8 max-w-screen-xl">
+        <ClimbingInfo
+          title="Bouldering"
+          description="Bouldering is a style of climbing that involves short, challenging routes, or 'problems,' typically no higher than 20 feet. Climbers tackle these problems without ropes or harnesses, relying solely on their strength, technique, and problem-solving skills."
+          imgUrl="/bouldering.jpeg"
+        />
+        <ClimbingInfo
+          title="Top-Roping"
+          description="In top-roping, climbers ascend routes with the rope anchored above them, providing a safety backup in case of a fall. Top-roping is often used for beginners or for routes with easy access to an anchor point at the top of the climb."
+          imgUrl="/top-roping.jpeg"
+        />
+        <ClimbingInfo
+          title="Ice Climbing"
+          description="Ice climbing involves ascending frozen waterfalls, ice-covered cliffs, or glaciers using specialized equipment such as ice axes, crampons, and ice screws. Ice climbers must navigate the constantly changing conditions of ice formations."
+          imgUrl="/ice-climbing.jpeg"
+        />
+        <ClimbingInfo
+          title="Free Soloing"
+          description="Free soloing is the most extreme form of climbing, where climbers ascend routes without the use of ropes, harnesses, or any protective gear. This style of climbing requires exceptional skill, strength, and concentration, as any mistake can have dire consequences."
+          imgUrl="/free-solo.avif"
+        />
+      </div>
+    </div>
+  </div>
+</Layout>
